@@ -68,6 +68,11 @@ Only cards that existed in Goat Format (up to August 2005) and need tracking dur
 | Lekunga | Token | 1 | Each tap removes one |
 | Insect Queen | Token | 1 | Each tap removes one |
 | Statue of the Wicked | Token | 1 | Each tap removes one |
+| Cobra Jar | Token | 1 | Tap when destroyed by battle: 500 damage to the opponent |
+| Des Dendle | Token | 1 | Each tap removes one |
+| Multiplication of Ants | Token | 2 | Each tap removes one |
+| Physical Double | Token | 1 | Each tap removes one |
+| Stray Lambs | Token | 2 | Each tap removes one |
 | Generic token (up) | Token | 1 | Goes up each tap |
 | Generic token (down) | Token | 1 | Goes down each tap; gone at zero |
 
@@ -149,6 +154,11 @@ Só cartas que existiam no formato Goat (até agosto de 2005) e que precisam de 
 | Lekunga | Token | 1 | Remove um por toque |
 | Insect Queen | Token | 1 | Remove um por toque |
 | Statue of the Wicked | Token | 1 | Remove um por toque |
+| Cobra Jar | Token | 1 | Toque quando for destruído em batalha: 500 de dano no oponente |
+| Des Dendle | Token | 1 | Remove um por toque |
+| Multiplication of Ants | Token | 2 | Remove um por toque |
+| Physical Double | Token | 1 | Remove um por toque |
+| Stray Lambs | Token | 2 | Remove um por toque |
 | Token genérico que soma | Token | 1 | Sobe a cada toque |
 | Token genérico que subtrai | Token | 1 | Desce a cada toque; some no zero |
 
@@ -230,6 +240,11 @@ Solo cartas que existían en el formato Goat (hasta agosto de 2005) y que necesi
 | Lekunga | Ficha | 1 | Cada toque quita uno |
 | Insect Queen | Ficha | 1 | Cada toque quita uno |
 | Statue of the Wicked | Ficha | 1 | Cada toque quita uno |
+| Cobra Jar | Ficha | 1 | Toca cuando sea destruida en batalla: 500 de daño al oponente |
+| Des Dendle | Ficha | 1 | Cada toque quita uno |
+| Multiplication of Ants | Ficha | 2 | Cada toque quita uno |
+| Physical Double | Ficha | 1 | Cada toque quita uno |
+| Stray Lambs | Ficha | 2 | Cada toque quita uno |
 | Ficha genérica que suma | Ficha | 1 | Sube con cada toque |
 | Ficha genérica que resta | Ficha | 1 | Baja con cada toque; desaparece en cero |
 
