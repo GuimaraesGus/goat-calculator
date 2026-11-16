@@ -30,7 +30,7 @@ Each half shows, from its player's point of view:
 - **Opponent box:** your opponent's life and name; tap it to open the calculator for them. Their tokens sit just above it, with their own "+" fixed on the right.
 - **History button** in the top corner, and the **timer** when it's on.
 
-The center bar has undo (circular arrow), dice, coin, random card and menu (gear). The icons mean the same thing from either side.
+The center bar has undo (circular arrow), dice, coin, random card, end game (laurel wreath) and menu (gear). The icons mean the same thing from either side.
 
 ### Features
 
@@ -44,8 +44,9 @@ The center bar has undo (circular arrow), dice, coin, random card and menu (gear
 | Dice and coin | Buttons in the bar | Choose 1 to 5 dice or coins, tap to roll or "Cancel". Result in gold; tap to close. |
 | Random card | Button in the bar | Picks a card from your opponent's hand (default) or yours, from 1 to 20 cards. The result shows on both sides. |
 | Who goes first | When a duel starts | Dice (each player rolls 1 or 2 dice, highest total wins, ties reroll), coin (first to tap calls heads or tails) or "Skip draw". Then "Duel!" and life counts up from 0 to 8000. |
+| End game | Laurel wreath in the bar | Opens on both halves; each player chooses on their own side. **Win by Exodia** plays the "EXODIA, OBLITERATE!" animation and ends the game with "Obliterated by Exodia". **Concede** gives the win to the opponent. Both ask for confirmation; tap the screen to skip the animation. |
 | Best of 3 | Automatic on a win, if on in the menu | Score at the top and a "Next game" button; the loser chooses who goes first; the timer covers the whole match. |
-| Win screen | Life at zero, Destiny Board complete or Final Countdown over | "Victory!" or "Defeat" for each side, with reason and score; you can go back to the duel. |
+| Win screen | Life at zero, Destiny Board, Final Countdown, Exodia or a concession | "Victory!" or "Defeat" for each side, with reason and score; you can go back to the duel. |
 
 ### Counters and tokens
 
@@ -110,7 +111,7 @@ Cada metade mostra, do ponto de vista do seu jogador:
 - **Quadro do oponente:** a vida e o nome do adversário; tocar abre a calculadora para ele. Logo acima ficam os tokens dele, com um "+" próprio fixo à direita.
 - **Botão de histórico** no canto de cima e o **cronômetro**, quando ligado.
 
-A barra central tem desfazer (seta circular), dado, moeda, carta aleatória e menu (engrenagem). Os ícones têm o mesmo sentido vistos de qualquer lado.
+A barra central tem desfazer (seta circular), dado, moeda, carta aleatória, fim de jogo (coroa de louros) e menu (engrenagem). Os ícones têm o mesmo sentido vistos de qualquer lado.
 
 ### Funções
 
@@ -124,8 +125,9 @@ A barra central tem desfazer (seta circular), dado, moeda, carta aleatória e me
 | Dado e moeda | Botões na barra | Escolha de 1 a 5 dados ou moedas, toque para lançar ou "Cancelar". Resultado em dourado; toque para fechar. |
 | Carta aleatória | Botão na barra | Sorteia uma carta da mão do oponente (padrão) ou da sua, de 1 a 20 cartas. O resultado aparece para os dois lados. |
 | Quem começa | Ao iniciar um duelo | Dado (cada um lança 1 ou 2 dados, maior soma vence, empate relança), moeda (quem tocar primeiro escolhe cara ou coroa) ou "Pular sorteio". Depois vem "Duelo!" e a vida sobe de 0 a 8000. |
+| Fim de jogo | Coroa de louros na barra | Abre nas duas metades; cada jogador escolhe no seu lado. **Vitória por Exodia** mostra a animação "EXODIA, OBLITERAR!" e encerra o jogo com "Obliteração por Exodia". **Desistir** dá a vitória ao oponente. Os dois pedem confirmação; tocar na tela pula a animação. |
 | Melhor de 3 | Automático na vitória, se ligado no menu | Placar no topo e botão "Próximo jogo"; quem perdeu escolhe quem começa; o cronômetro conta a partida inteira. |
-| Tela de vitória | Vida zerada, Destiny Board completo ou Final Countdown no fim | "Vitória!" ou "Derrota" para cada lado, com motivo e placar; dá para voltar ao duelo. |
+| Tela de vitória | Vida zerada, Destiny Board, Final Countdown, Exodia ou desistência | "Vitória!" ou "Derrota" para cada lado, com motivo e placar; dá para voltar ao duelo. |
 
 ### Contadores e tokens
 
@@ -190,7 +192,7 @@ Cada mitad muestra, desde el punto de vista de su jugador:
 - **Cuadro del oponente:** la vida y el nombre del rival; al tocarlo se abre la calculadora para él. Justo encima están sus fichas, con su propio "+" fijo a la derecha.
 - **Botón de historial** en la esquina superior y el **cronómetro**, cuando está activado.
 
-La barra central tiene deshacer (flecha circular), dado, moneda, carta aleatoria y menú (engranaje). Los íconos significan lo mismo vistos desde cualquier lado.
+La barra central tiene deshacer (flecha circular), dado, moneda, carta aleatoria, fin del juego (corona de laurel) y menú (engranaje). Los íconos significan lo mismo vistos desde cualquier lado.
 
 ### Funciones
 
@@ -204,8 +206,9 @@ La barra central tiene deshacer (flecha circular), dado, moneda, carta aleatoria
 | Dado y moneda | Botones en la barra | Elige de 1 a 5 dados o monedas, toca para lanzar o "Cancelar". Resultado en dorado; toca para cerrar. |
 | Carta aleatoria | Botón en la barra | Elige una carta de la mano del oponente (por defecto) o de la tuya, de 1 a 20 cartas. El resultado aparece para los dos lados. |
 | Quién empieza | Al iniciar un duelo | Dado (cada uno lanza 1 o 2 dados, gana la suma mayor, el empate se repite), moneda (quien toque primero elige cara o cruz) o "Saltar sorteo". Luego aparece "¡Duelo!" y la vida sube de 0 a 8000. |
+| Fin del juego | Corona de laurel en la barra | Se abre en las dos mitades; cada jugador elige en su lado. **Victoria por Exodia** muestra la animación "¡EXODIA, OBLITERAR!" y termina el juego con "Obliteración por Exodia". **Rendirse** da la victoria al oponente. Ambos piden confirmación; tocar la pantalla salta la animación. |
 | Mejor de 3 | Automático al ganar, si está activado en el menú | Marcador arriba y botón "Siguiente juego"; quien perdió elige quién empieza; el cronómetro cuenta toda la partida. |
-| Pantalla de victoria | Vida en cero, Destiny Board completo o Final Countdown terminado | "¡Victoria!" o "Derrota" para cada lado, con motivo y marcador; se puede volver al duelo. |
+| Pantalla de victoria | Vida en cero, Destiny Board, Final Countdown, Exodia o rendición | "¡Victoria!" o "Derrota" para cada lado, con motivo y marcador; se puede volver al duelo. |
 
 ### Contadores y fichas
 
