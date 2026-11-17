@@ -502,13 +502,15 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 @container (max-width:250px){.tseg button{padding:0 4px!important;font-size:11px!important}}
 #create .side{container-type:inline-size}
 @container (max-width:240px){#create .side>.go{grid-column:1/-1}#create .side>.ghost{grid-row:5;grid-column:1/-1;height:30px}}
-}
+
+/* nome do token ao lado do nome da carta */
+.ctok{display:inline-block;margin-left:8px;padding:1px 8px;border-radius:999px;border:1px solid var(--border-strong);background:var(--surface-1);color:var(--muted);font-size:12px;font-weight:600;line-height:1.5;vertical-align:middle;white-space:nowrap}
 #calc .pad{container-type:size}
 @supports (width:1cqw){
-#calc .pad .k{font-size:clamp(18px,min(8.5cqw,7.5cqh),44px)}
-#calc .pad .k.minus,#calc .pad .k.plus{font-size:clamp(26px,min(11cqw,10cqh),58px)}
-#calc .pad .k small{font-size:clamp(11px,min(3cqw,3.4cqh),17px)}
-#calc .pad #kDel{font-size:clamp(22px,min(8cqw,8.5cqh),46px)!important}
+#calc .pad .k{font-size:clamp(18px,min(8.5cqw,11cqh),44px)}
+#calc .pad .k.minus,#calc .pad .k.plus{font-size:clamp(26px,min(11cqw,14cqh),58px)}
+#calc .pad .k small{font-size:clamp(11px,min(3cqw,4.5cqh),17px)}
+#calc .pad #kDel{font-size:clamp(22px,min(8cqw,12cqh),46px)!important}
 }
 </style>
 </head>
@@ -621,17 +623,17 @@ var TYPES={
  library:{cat:"c",name:"Royal Magical Library",short:"Royal Magical Library",icon:"h-book",start:0,dir:1,max:3,label:"Spell Counters"},
  gup:{cat:"c",name:"Contador que soma",short:"Soma",icon:"h-gup",start:0,dir:1,label:"Começa em"},
  gdown:{cat:"c",name:"Contador que subtrai",short:"Subtrai",icon:"h-gdown",start:3,dir:-1,label:"Começa em"},
- sheep:{cat:"t",name:"Scapegoat",short:"Scapegoat",icon:"f-sheep",start:4,label:"Tokens"},
- ojama:{cat:"t",name:"Ojama Trio",short:"Ojama Trio",icon:"p-jester",start:3,label:"Tokens",dmg:300},
- slime:{cat:"t",name:"Jam Breeding Machine",short:"Jam Breeding Machine",icon:"t-pipe",start:1,label:"Tokens"},
- lekunga:{cat:"t",name:"Lekunga",short:"Lekunga",icon:"q-tentacle",start:1,label:"Tokens"},
- insect:{cat:"t",name:"Insect Queen",short:"Insect Queen",icon:"p-queen",start:1,label:"Tokens"},
- wicked:{cat:"t",name:"Statue of the Wicked",short:"Statue of the Wicked",icon:"p-idol",start:1,label:"Tokens"},
- cobra:{cat:"t",name:"Cobra Jar",short:"Cobra Jar",icon:"f-cobra",start:1,label:"Tokens",odmg:500},
- wplant:{cat:"t",name:"Des Dendle",short:"Des Dendle",icon:"f-wplant",start:1,label:"Tokens"},
- ant:{cat:"t",name:"Multiplication of Ants",short:"Multiplication of Ants",icon:"f-ant",start:2,label:"Tokens"},
- mirage:{cat:"t",name:"Physical Double",short:"Physical Double",icon:"f-mirage",start:1,label:"Tokens"},
- lamb:{cat:"t",name:"Stray Lambs",short:"Stray Lambs",icon:"f-lamb",start:2,label:"Tokens"},
+ sheep:{cat:"t",tok:"Sheep Token",name:"Scapegoat",short:"Scapegoat",icon:"f-sheep",start:4,label:"Tokens"},
+ ojama:{cat:"t",tok:"Ojama Token",name:"Ojama Trio",short:"Ojama Trio",icon:"p-jester",start:3,label:"Tokens",dmg:300},
+ slime:{cat:"t",tok:"Slime Token",name:"Jam Breeding Machine",short:"Jam Breeding Machine",icon:"t-pipe",start:1,label:"Tokens"},
+ lekunga:{cat:"t",tok:"Lekunga Token",name:"Lekunga",short:"Lekunga",icon:"q-tentacle",start:1,label:"Tokens"},
+ insect:{cat:"t",tok:"Insect Monster Token",name:"Insect Queen",short:"Insect Queen",icon:"p-queen",start:1,label:"Tokens"},
+ wicked:{cat:"t",tok:"Wicked Token",name:"Statue of the Wicked",short:"Statue of the Wicked",icon:"p-idol",start:1,label:"Tokens"},
+ cobra:{cat:"t",tok:"Poisonous Snake Token",name:"Cobra Jar",short:"Cobra Jar",icon:"f-cobra",start:1,label:"Tokens",odmg:500},
+ wplant:{cat:"t",tok:"Wicked Plant Token",name:"Des Dendle",short:"Des Dendle",icon:"f-wplant",start:1,label:"Tokens"},
+ ant:{cat:"t",tok:"Army Ant Token",name:"Multiplication of Ants",short:"Multiplication of Ants",icon:"f-ant",start:2,label:"Tokens"},
+ mirage:{cat:"t",tok:"Mirage Token",name:"Physical Double",short:"Physical Double",icon:"f-mirage",start:1,label:"Tokens"},
+ lamb:{cat:"t",tok:"Lamb Token",name:"Stray Lambs",short:"Stray Lambs",icon:"f-lamb",start:2,label:"Tokens"},
  gtup:{cat:"t",name:"Token genérico que soma",short:"Token que soma",icon:"q-tup",start:1,label:"Tokens",up:true},gtdown:{cat:"t",name:"Token genérico que subtrai",short:"Token que subtrai",icon:"q-tdown",start:1,label:"Tokens"}
 };
 var SC={burial:{name:"Premature Burial",v:-800},duo:{name:"Delinquent Duo",v:-1000},fusion:{name:"Dimension Fusion / Injection Fairy Lily",v:-2000},stein:{name:"Cyber-Stein",v:-5000},snatch:{name:"Snatch Steal",v:1000}};
@@ -785,7 +787,7 @@ function openMini(p,html,binds){miniBox.classList.remove('wide','two');mini.clas
 function closeMini(){mini.classList.remove('show');}
 mini.addEventListener('click',function(e){if(e.target===mini)closeMini();});
 function chipMenu(id,p){var i=findChip(id);if(i<0)return;var c=S.chips[i],T=TYPES[c.type];
- var h='<h3 style="color:var(--'+(c.owner===0?'p1':'p2')+')">'+svg(T.icon)+'<span style="color:var(--text)">'+T.name+'</span></h3><div class="cols"><div class="col"><div class="mdesc">'+descHTML(c.type)+'</div><p>'+(T.cat==='t'?c.n+' token(s) de '+who(c.owner):'Valor atual: '+(T.max?c.n+'/'+T.max:c.n))+'</p></div><div class="col">';
+ var h='<h3 style="color:var(--'+(c.owner===0?'p1':'p2')+')">'+svg(T.icon)+'<span style="color:var(--text)">'+T.name+(T.tok?'<span class="ctok">'+T.tok+'</span>':'')+'</span></h3><div class="cols"><div class="col"><div class="mdesc">'+descHTML(c.type)+'</div><p>'+(T.cat==='t'?c.n+' token(s) de '+who(c.owner):'Valor atual: '+(T.max?c.n+'/'+T.max:c.n))+'</p></div><div class="col">';
  if(T.fire)h+=c.n>0?'<button class="act pri" data-a="fire">Disparar · −'+(c.n*1000)+' no oponente</button>':'<p>Sem Standby Phases ainda: nada para disparar.</p>';
  h+='<div class="sec">Ajustar</div><div class="row2"><button class="act" data-a="dec" style="font-size:20px">−1</button><button class="act" data-a="inc" style="font-size:20px">+1</button></div><button class="act warn" data-a="rm" style="margin-top:6px">Remover</button><button class="act ghost" data-a="x">Fechar</button></div></div>';
  openMini(p,h,function(){miniBox.classList.add('two');miniBox.querySelectorAll('[data-a]').forEach(function(b){b.addEventListener('click',function(){var a=b.dataset.a;var j=findChip(id);if(a==='x'||j<0){closeMini();return;}var cc=S.chips[j];snap();
@@ -861,7 +863,7 @@ function descHTML(k){var d=DESC[k];if(!d)return '';return (d.st?'<div class="dst
 function ownerOf(){return K.opp?1-K.p:K.p;}
 function renderCreate(){var g=$('cgrid');g.innerHTML='';var cls=K.p===0?'p1':'p2';
  Object.keys(TYPES).filter(function(k){return TYPES[k].cat===K.tab;}).forEach(function(k){var T=TYPES[k];var b=document.createElement('button');b.className='ic'+(k===K.type?' on':'');if(k===K.type)b.style.color='var(--'+cls+')';b.innerHTML=svg(T.icon)+'<span>'+T.short+'</span>';b.addEventListener('click',function(){pick(k);});g.appendChild(b);});
- var T=TYPES[K.type],o=ownerOf();$('clab').textContent=T.label;$('cName').textContent=T.name;$('cDesc').innerHTML=descHTML(K.type);
+ var T=TYPES[K.type],o=ownerOf();$('clab').textContent=T.label;$('cName').innerHTML=esc(T.name)+(T.tok?'<span class="ctok">'+esc(T.tok)+'</span>':'');$('cDesc').innerHTML=descHTML(K.type);
  $('cTitle').innerHTML='Adicionar '+(K.tab==='t'?'token':'contador')+'<small>Fica com '+(o===K.p?'você':esc(pn(o))+' (oponente)')+'</small>';$('cN').textContent=T.max?K.n+'/'+T.max:K.n;
  var go=$('cGo');go.className='go c'+o+'x';go.textContent=o!==K.p?'Adicionar no oponente':'Adicionar';}
 create.querySelectorAll('[data-tab]').forEach(function(b){b.addEventListener('click',function(){setTab(b.dataset.tab);});});
