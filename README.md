@@ -47,6 +47,7 @@ The center bar has undo (circular arrow), dice, coin, random card, end game (lau
 | End game | Laurel wreath in the bar | Opens on both halves; each player chooses on their own side. **Win by Exodia** plays the "EXODIA, OBLITERATE!" animation and ends the game with "Obliterated by Exodia". **Win by Destiny Board** plays a spirit board animation spelling F-I-N-A-L (also shown when the Destiny Board counter reaches 5). **Win by Final Countdown** plays a 20-to-0 countdown dial ending with the app's eye (also shown when the Final Countdown counter runs out). **Concede** gives the win to the opponent. Both ask for confirmation; tap the screen to skip the animation. |
 | Best of 3 | Automatic on a win, if on in the menu | Score at the top and a "Next game" button; the loser chooses who goes first; the timer covers the whole match. |
 | Win screen | Life at zero, Destiny Board, Final Countdown, Exodia or a concession | "Victory!" or "Defeat" for each side, with reason and score; you can go back to the duel. |
+| Easter egg | — | Legend says that if you are patient enough with your own life points, someone shows up looking for a certain primate. We have said too much. |
 
 ### Counters and tokens
 
@@ -133,6 +134,7 @@ A barra central tem desfazer (seta circular), dado, moeda, carta aleatória, fim
 | Fim de jogo | Coroa de louros na barra | Abre nas duas metades; cada jogador escolhe no seu lado. **Vitória por Exodia** mostra a animação "EXODIA, OBLITERAR!" e encerra o jogo com "Obliteração por Exodia". **Vitória por Destiny Board** mostra um tabuleiro de espíritos soletrando F-I-N-A-L (a mesma animação aparece quando o contador do Destiny Board chega a 5). **Vitória por Final Countdown** mostra um mostrador contando de 20 a 0 que termina com o olho do app (a mesma animação aparece quando o contador do Final Countdown chega ao fim). **Desistir** dá a vitória ao oponente. Os dois pedem confirmação; tocar na tela pula a animação. |
 | Melhor de 3 | Automático na vitória, se ligado no menu | Placar no topo e botão "Próximo jogo"; quem perdeu escolhe quem começa; o cronômetro conta a partida inteira. |
 | Tela de vitória | Vida zerada, Destiny Board, Final Countdown, Exodia ou desistência | "Vitória!" ou "Derrota" para cada lado, com motivo e placar; dá para voltar ao duelo. |
+| Easter egg | — | Dizem que, se você tiver paciência com a sua própria vida, alguém aparece procurando um certo primata. Já falamos demais. |
 
 ### Contadores e tokens
 
@@ -219,6 +221,7 @@ La barra central tiene deshacer (flecha circular), dado, moneda, carta aleatoria
 | Fin del juego | Corona de laurel en la barra | Se abre en las dos mitades; cada jugador elige en su lado. **Victoria por Exodia** muestra la animación "¡EXODIA, OBLITERAR!" y termina el juego con "Obliteración por Exodia". **Victoria por Destiny Board** muestra un tablero de espíritus que deletrea F-I-N-A-L (la misma animación aparece cuando el contador de Destiny Board llega a 5). **Victoria por Final Countdown** muestra un dial que cuenta de 20 a 0 y termina con el ojo de la app (la misma animación aparece cuando el contador de Final Countdown llega al final). **Rendirse** da la victoria al oponente. Ambos piden confirmación; tocar la pantalla salta la animación. |
 | Mejor de 3 | Automático al ganar, si está activado en el menú | Marcador arriba y botón "Siguiente juego"; quien perdió elige quién empieza; el cronómetro cuenta toda la partida. |
 | Pantalla de victoria | Vida en cero, Destiny Board, Final Countdown, Exodia o rendición | "¡Victoria!" o "Derrota" para cada lado, con motivo y marcador; se puede volver al duelo. |
+| Easter egg | — | Cuenta la leyenda que, si tienes paciencia con tus propios puntos de vida, alguien aparece buscando a cierto primate. Ya dijimos demasiado. |
 
 ### Contadores y fichas
 
@@ -271,3 +274,5 @@ Replace `index.html` and bump the cache name in `sw.js` (for example `goatcalc-v
 ## Notes
 
 Fan project, not affiliated with or endorsed by Konami. Yu-Gi-Oh! is a trademark of Konami. Card names are used only to identify their effects; no card artwork is included.
+
+Easter egg audio: clip from a video by [@feupys](https://www.instagram.com/feupys/) on Instagram. If you are the author and want it removed, please open an issue.
