@@ -617,26 +617,27 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 (function(){
 "use strict";
 var TYPES={
- swords:{cat:"c",name:"Swords of Revealing Light",short:"Swords of Revealing Light",icon:"h-swords",start:3,dir:-1,label:"Turnos do oponente"},
- capsule:{cat:"c",name:"Different Dimension Capsule",short:"Different Dimension Capsule",icon:"h-coffin",start:2,dir:-1,label:"Suas Standby Phases"},
- cannon:{cat:"c",name:"Wave-Motion Cannon",short:"Wave-Motion Cannon",icon:"h-cannon",start:0,dir:1,label:"Standby Phases passadas",fire:true},
  board:{cat:"c",name:"Destiny Board",short:"Destiny Board",icon:"h-board",start:1,dir:1,max:5,label:"Letras no campo"},
+ capsule:{cat:"c",name:"Different Dimension Capsule",short:"Different Dimension Capsule",icon:"h-coffin",start:2,dir:-1,label:"Suas Standby Phases"},
  countdown:{cat:"c",name:"Final Countdown",short:"Final Countdown",icon:"h-hourglass",start:20,dir:-1,label:"Turnos restantes"},
  library:{cat:"c",name:"Royal Magical Library",short:"Royal Magical Library",icon:"h-book",start:0,dir:1,max:3,label:"Spell Counters"},
+ swords:{cat:"c",name:"Swords of Revealing Light",short:"Swords of Revealing Light",icon:"h-swords",start:3,dir:-1,label:"Turnos do oponente"},
+ cannon:{cat:"c",name:"Wave-Motion Cannon",short:"Wave-Motion Cannon",icon:"h-cannon",start:0,dir:1,label:"Standby Phases passadas",fire:true},
  gup:{cat:"c",name:"Contador que soma",short:"Soma",icon:"h-gup",start:0,dir:1,label:"Começa em"},
  gdown:{cat:"c",name:"Contador que subtrai",short:"Subtrai",icon:"h-gdown",start:3,dir:-1,label:"Começa em"},
- sheep:{cat:"t",tok:"Sheep Token",name:"Scapegoat",short:"Scapegoat",icon:"f-sheep",start:4,label:"Tokens"},
- ojama:{cat:"t",tok:"Ojama Token",name:"Ojama Trio",short:"Ojama Trio",icon:"p-jester",start:3,label:"Tokens",dmg:300},
- slime:{cat:"t",tok:"Slime Token",name:"Jam Breeding Machine",short:"Jam Breeding Machine",icon:"t-pipe",start:1,label:"Tokens"},
- lekunga:{cat:"t",tok:"Lekunga Token",name:"Lekunga",short:"Lekunga",icon:"q-tentacle",start:1,label:"Tokens"},
- insect:{cat:"t",tok:"Insect Monster Token",name:"Insect Queen",short:"Insect Queen",icon:"p-queen",start:1,label:"Tokens"},
- wicked:{cat:"t",tok:"Wicked Token",name:"Statue of the Wicked",short:"Statue of the Wicked",icon:"p-idol",start:1,label:"Tokens"},
  cobra:{cat:"t",tok:"Poisonous Snake Token",name:"Cobra Jar",short:"Cobra Jar",icon:"f-cobra",start:1,label:"Tokens",odmg:500},
  wplant:{cat:"t",tok:"Wicked Plant Token",name:"Des Dendle",short:"Des Dendle",icon:"f-wplant",start:1,label:"Tokens"},
+ insect:{cat:"t",tok:"Insect Monster Token",name:"Insect Queen",short:"Insect Queen",icon:"p-queen",start:1,label:"Tokens"},
+ slime:{cat:"t",tok:"Slime Token",name:"Jam Breeding Machine",short:"Jam Breeding Machine",icon:"t-pipe",start:1,label:"Tokens"},
+ lekunga:{cat:"t",tok:"Lekunga Token",name:"Lekunga",short:"Lekunga",icon:"q-tentacle",start:1,label:"Tokens"},
  ant:{cat:"t",tok:"Army Ant Token",name:"Multiplication of Ants",short:"Multiplication of Ants",icon:"f-ant",start:2,label:"Tokens"},
+ ojama:{cat:"t",tok:"Ojama Token",name:"Ojama Trio",short:"Ojama Trio",icon:"p-jester",start:3,label:"Tokens",dmg:300},
  mirage:{cat:"t",tok:"Mirage Token",name:"Physical Double",short:"Physical Double",icon:"f-mirage",start:1,label:"Tokens"},
+ sheep:{cat:"t",tok:"Sheep Token",name:"Scapegoat",short:"Scapegoat",icon:"f-sheep",start:4,label:"Tokens"},
+ wicked:{cat:"t",tok:"Wicked Token",name:"Statue of the Wicked",short:"Statue of the Wicked",icon:"p-idol",start:1,label:"Tokens"},
  lamb:{cat:"t",tok:"Lamb Token",name:"Stray Lambs",short:"Stray Lambs",icon:"f-lamb",start:2,label:"Tokens"},
- gtup:{cat:"t",name:"Token genérico que soma",short:"Token que soma",icon:"q-tup",start:1,label:"Tokens",up:true},gtdown:{cat:"t",name:"Token genérico que subtrai",short:"Token que subtrai",icon:"q-tdown",start:1,label:"Tokens"}
+ gtup:{cat:"t",name:"Token genérico que soma",short:"Token que soma",icon:"q-tup",start:1,label:"Tokens",up:true},
+ gtdown:{cat:"t",name:"Token genérico que subtrai",short:"Token que subtrai",icon:"q-tdown",start:1,label:"Tokens"}
 };
 var SC={burial:{name:"Premature Burial",v:-800},duo:{name:"Delinquent Duo",v:-1000},fusion:{name:"Dimension Fusion / Injection Fairy Lily",v:-2000},stein:{name:"Cyber-Stein",v:-5000},snatch:{name:"Snatch Steal",v:1000}};
 var START=8000,TIMER=40*60,KEY="goatcalc-v2";

@@ -1,6 +1,6 @@
 // Guarda o app no aparelho para funcionar sem internet.
 // Ao publicar uma versão nova, mude o número abaixo (v1 -> v2) para os celulares baixarem a atualização.
-const CACHE = 'goatcalc-v11';
+const CACHE = 'goatcalc-v12';
 const FILES = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
