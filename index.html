@@ -13,6 +13,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Goat Calc">
 <title>Calculadora Goat</title>
+<meta name="color-scheme" content="light dark">
+<script>/* escala a interface inteira em telas maiores que um celular, mantendo as proporções */
+(function(){function fit(){var w=innerWidth,h=innerHeight,z=h>=w?Math.min(w/390,h/680):Math.min(w/640,h/390);z=Math.max(1,Math.min(z,2.4));document.documentElement.style.zoom=z>1.04?z.toFixed(3):'';}fit();addEventListener('resize',fit);addEventListener('orientationchange',function(){setTimeout(fit,150);});})();</script>
 <style>
 :root{
   --bg:#f3f1ec;--surface:#ffffff;--surface-1:#f7f6f2;--surface-2:#ffffff;--border:rgba(0,0,0,.12);--border-strong:rgba(0,0,0,.22);
@@ -487,6 +490,26 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 #dbx .flash{position:absolute;inset:0;background:#d9c2ff;opacity:0;pointer-events:none}
 #dbx.run .flash{animation:exFlash .8s ease-out 3.6s}
 @media (orientation:landscape){#dbx .dh{flex-direction:row;gap:18px}#dbx .ouija{width:min(68vmin,320px)}#dbx .lp2{width:min(10vmin,46px);font-size:min(6.5vmin,30px)}#dbx .dt{font-size:min(6.5vmin,30px)}}
+
+/* tamanho de texto fixo nas proporções do app (o ajuste de texto do navegador desmontava o layout) */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+/* teclas da calculadora: o texto acompanha o tamanho da tecla */
+
+/* telas pequenas */
+.mini .box{max-height:calc(100% - 16px)!important;overflow-y:auto;overscroll-behavior:contain}
+/* componentes estreitos (vale também com a interface escalada) */
+.box .sw.thm{container-type:inline-size}
+@container (max-width:250px){.tseg button{padding:0 4px!important;font-size:11px!important}}
+#create .side{container-type:inline-size}
+@container (max-width:240px){#create .side>.go{grid-column:1/-1}#create .side>.ghost{grid-row:5;grid-column:1/-1;height:30px}}
+}
+#calc .pad{container-type:size}
+@supports (width:1cqw){
+#calc .pad .k{font-size:clamp(18px,min(8.5cqw,7.5cqh),44px)}
+#calc .pad .k.minus,#calc .pad .k.plus{font-size:clamp(26px,min(11cqw,10cqh),58px)}
+#calc .pad .k small{font-size:clamp(11px,min(3cqw,3.4cqh),17px)}
+#calc .pad #kDel{font-size:clamp(22px,min(8cqw,8.5cqh),46px)!important}
+}
 </style>
 </head>
 <body>
@@ -662,7 +685,7 @@ function buzz(x){if(!vibOn)return;try{if(navigator.vibrate)navigator.vibrate(x);
 var THK='goatcalc-theme',theme='auto';try{theme=localStorage.getItem(THK)||'auto';}catch(e){}
 function applyTheme(){var mt=theme==='dark'?'all':theme==='light'?'not all':'(prefers-color-scheme: dark)';
  [].forEach.call(document.styleSheets,function(ss){var rs;try{rs=ss.cssRules;}catch(e){return;}[].forEach.call(rs,function(r){if(r.media&&(r._dk||/prefers-color-scheme:\s*dark/.test(r.media.mediaText))){r._dk=1;r.media.mediaText=mt;}});});
- document.documentElement.style.colorScheme=theme==='auto'?'light dark':theme;}
+ document.documentElement.style.colorScheme=theme==='auto'?'light dark':'only '+theme;}
 applyTheme();
 var TK='goatcalc-timer',timerOn=false;try{timerOn=localStorage.getItem(TK)==='on';}catch(e){}
 function applyTimer(){document.body.classList.toggle('notimer',!timerOn);}applyTimer();
